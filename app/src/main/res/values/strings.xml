@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CMAN</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="radio_low">low</string>
+    <string name="radio_medium">medium</string>
+    <string name="radio_high">high</string>
+
+
+
+    <string-array name="select_product">
+        <item>SAMP</item>
+        <item>openlypsa</item>
+        <item>CMAN</item>
+        <item>hardware</item>
+        <item>kiosk</item>
+
+    </string-array>
+
+
+</resources>

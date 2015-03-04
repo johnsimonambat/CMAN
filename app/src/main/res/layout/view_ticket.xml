@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#7ECAE6">
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+    </TableRow>
+
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/ticket_button"
+        android:layout_toRightOf="@+id/tableRow1"
+        android:layout_toEndOf="@+id/tableRow1"
+        android:layout_alignBottom="@+id/ticket_button">
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="View Ticket By ID"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ticket_id"
+        android:autoText="true"
+        android:hint="Ticket ID"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="search"
+        android:id="@+id/ticket_button"
+        android:background="#ba414141"
+        android:layout_alignBottom="@+id/ticket_id"
+        android:layout_toRightOf="@+id/ticket_id"
+        android:layout_toEndOf="@+id/ticket_id"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/subjectview"
+        android:textStyle="bold"
+        android:layout_below="@+id/subjectlabel"
+        android:layout_alignLeft="@+id/mesageview"
+        android:layout_alignStart="@+id/mesageview"
+        android:textColor="#f4000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/mesageview"
+        android:textStyle="bold"
+        android:layout_below="@+id/messagelabel"
+        android:layout_toRightOf="@+id/subjectlabel"
+        android:layout_toEndOf="@+id/subjectlabel"
+        android:textColor="#f4000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/statusview"
+        android:textStyle="bold"
+        android:textColor="#f4000000"
+        android:layout_below="@+id/datelabel"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/dateview"
+        android:textStyle="bold"
+        android:textColor="#f4000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/statusview"
+        android:layout_alignEnd="@+id/statusview"
+        android:layout_marginBottom="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/subjectlabel"
+        android:textStyle="bold"
+        android:layout_below="@+id/listView1"
+        android:layout_toRightOf="@+id/tableRow1"
+        android:layout_toEndOf="@+id/tableRow1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/messagelabel"
+        android:textStyle="bold"
+        android:layout_below="@+id/subjectview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/statuslabel"
+        android:textStyle="bold"
+        android:layout_below="@+id/datelabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/datelabel"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/dateview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

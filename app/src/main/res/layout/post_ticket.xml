@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#68C1E2">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:popupBackground="#3EB0DA"
+        android:layout_alignLeft="@+id/subject"
+        android:layout_alignStart="@+id/subject"
+        android:layout_alignRight="@+id/subject"
+        android:layout_alignEnd="@+id/subject"
+        android:layout_below="@+id/textView8" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subject"
+        android:hint="Subject"
+        android:layout_below="@+id/spinner1"
+        android:layout_alignLeft="@+id/insertBtn"
+        android:layout_alignStart="@+id/insertBtn"
+        android:layout_alignRight="@+id/insertBtn"
+        android:layout_alignEnd="@+id/insertBtn"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/message"
+        android:hint="message"
+        android:layout_marginTop="39dp"
+        android:layout_below="@+id/subject"
+        android:layout_alignLeft="@+id/subject"
+        android:layout_alignStart="@+id/subject"
+        android:layout_alignRight="@+id/subject"
+        android:layout_alignEnd="@+id/subject"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myRadioGroup"
+        android:checkedButton="@+id/low"
+        android:layout_below="@+id/message"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_toEndOf="@+id/textView8"
+        android:layout_marginTop="39dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/low"
+            android:checked="false"
+            android:text="low" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/medium"
+            android:checked="false"
+            android:text="medium" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/high"
+            android:checked="false"
+            android:text="high" />
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:id="@+id/insertBtn"
+        android:background="#0C3240"
+        android:padding="10dp"
+        android:layout_marginBottom="84dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Priority"
+        android:id="@+id/textView4"
+        android:layout_alignTop="@+id/myRadioGroup"
+        android:layout_alignLeft="@+id/message"
+        android:layout_alignStart="@+id/message"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Post the Ticket"
+        android:id="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_marginTop="37dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Select Product"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/textView7"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_alignStart="@+id/spinner1"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
